@@ -1,0 +1,93 @@
+Printing char=ascii value.
+#include<stdio.h>
+
+int main() {
+   int i;
+   for(i=122;i>=97;i--)
+   {
+       printf(" %c=%i",i,i);
+   }
+}
+
+Printing 0 to 10.
+#include<stdio.h>
+
+int main() {
+   int i;
+   for(i=0;i<=10;i++)
+   {
+       printf(" %d",i);
+   }
+}
+
+printing sum of n natural numbers.
+#include<stdio.h>
+
+int main() {
+   int i, sum = 0;
+   printf("first 10 natural numbers:\n");
+   for(i=0;i<=10;i++)
+   {
+       sum = sum + i;
+       printf("%d",i);
+     }
+   printf("\nthe sum is: %d",sum);
+}
+
+REading 10 num from keyboard and finding their sum and avg.
+#include<stdio.h>
+
+int main() {
+   int i,n,sum = 0;
+  float avg;
+  printf("input 10 numbers : \n");
+  for(i=1;i<=10;i++)
+  {
+      printf("number-%d : %d\n",i,i);
+      scanf("%d",&n);
+      sum=sum+n;
+  }
+  avg=sum/10.0;
+  printf("the sum if 10 num is : %d\nthe average num is : %f\n",sum,avg);
+}
+
+
+#include <stdio.h>
+void main()
+ {
+    int i,n;
+    printf("Input number of terms : \n");
+    scanf("%d", &n);
+    for(i=1;i<=n;i++)
+    {
+	 printf("Number is : %d and cube of the %d is :%d \n",i,i, (i*i*i));     
+    }
+ }
+
+pattern like right angle triangle with a number which will repeat a number in a row.
+ #include <stdio.h>
+void main()
+{
+   int i,j,r;
+
+   printf("number of rows : \n");
+   scanf("%d",&r);
+   for(i=1;i<=r;i++)
+   {
+	for(j=1;j<=i;j++)
+	   printf("%d",i);
+	printf("\n");
+   }
+}
+
+
+Printing string to long integer.
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+    char *string = "8754433" , *ptr;
+    long lnum;
+    lnum = strtol(string,&ptr,10);
+    printf("string=%s long = %d\n",string,lnum);
+}
