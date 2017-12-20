@@ -1,0 +1,50 @@
+accept two integers and check whether they are equal or not.
+#include<stdio.h>
+
+int main() {
+   int number1,number2;
+   scanf("%d%d",&number1,&number2);
+   if(number1==number2)
+        printf("Number1 and Number2 are equal",number1,number2);
+    else
+        printf("Number1 and Number2 are not equal",number1,number2);
+  
+}
+------------------------------------------------------
+check whether a given number is positive or negative.
+#include<stdio.h>
+int main() {
+   int n;
+   scanf("%d",&n);
+   if(n>=0)
+        printf("%d is a positive number",n);
+    else
+        printf("%d is not a positive number",n);
+}
+----------------------------------------------------------
+check whether a triangle is Equilateral, Isosceles or Scalene.
+#include<stdio.h>
+int main() {
+   int l,b,h;
+   scanf("%d%d%d",&l,&b,&h);
+   if(l==b && b==h)
+      printf("This is an Equilateral Triangle");
+   else if (l==b || l==h || b==l)
+      printf("This is an Isosceles Triangle");
+   else 
+      printf("This is a Scalene Traingle");
+}
+------------------------------------------------------------
+check whether a character is an alphabet, digit or special character.
+#include<stdio.h>
+int main() {
+   char character;
+   scanf("%c", &character);
+   printf("Input a character: \n ", character);
+   if((character >= "a" && character <= "z") || (character >= "A" && character <= "Z"))
+        printf("This is an Alphabet.");
+   else if(character >= "0" && character <= "9")
+        printf("This is a Digit.");
+   else 
+        printf("This is a Special character.");
+}
